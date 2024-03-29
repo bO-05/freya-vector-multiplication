@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "next": "^14.1.4",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.3"
+  },
+  "name": "Why-with-lumentis",
+  "description": "Join Freya Holmér on a captivating journey into the realm of vector multiplication and geometric algebra. This talk explores the fundamental question of why vectors can't be multiplied directly and unravels the enigmatic world of complex numbers, quaternions, and bivectors. Through a series of thought-provoking examples and engaging explanations, Freya demonstrates how the axiom of vector squared length leads to the emergence of familiar products and constructs in mathematics. Prepare to have your perception of vector multiplication transformed as you discover the elegant beauty of geometric algebra and its profound implications for game development and beyond.",
+  "version": "0.0.1",
+  "scripts": {
+    "devstart": "next dev -p 5656 & node start.js",
+    "dev": "next dev -p 5656",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "Game Development",
+    "Mathematics",
+    "Vector Algebra",
+    "Geometric Algebra",
+    "Complex Numbers",
+    "Quaternions",
+    "Clifford Algebra",
+    "Game Engines",
+    "Unity",
+    "Math Education"
+  ]
+}

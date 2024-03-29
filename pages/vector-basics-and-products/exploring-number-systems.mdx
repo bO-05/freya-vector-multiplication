@@ -1,0 +1,66 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Exploring Number Systems
+
+In this section, we'll take a closer look at the properties and closure of different number systems, starting from the most basic ones and gradually expanding to more complex systems. Understanding these number systems is crucial for grasping the concepts of vector algebra and geometric algebra.
+
+## Natural Numbers (ℕ)
+
+Natural numbers, denoted by ℕ, are the counting numbers starting from 0 and going up to infinity. They are closed under addition and multiplication, meaning that adding or multiplying two natural numbers always results in another natural number.
+
+<Callout emoji="✅">
+Natural numbers are closed under:
+- Addition: $a + b \in \mathbb{N}$, where $a, b \in \mathbb{N}$
+- Multiplication: $a \times b \in \mathbb{N}$, where $a, b \in \mathbb{N}$
+</Callout>
+
+However, natural numbers are not closed under subtraction. For example, $2 - 3 = -1$, which is not a natural number.
+
+## Integers (ℤ)
+
+To address the closure issue with subtraction, we expand our number system to integers, denoted by ℤ. Integers include all natural numbers, their negatives, and zero. They are closed under addition, subtraction, and multiplication.
+
+<Callout emoji="✅">
+Integers are closed under:
+- Addition: $a + b \in \mathbb{Z}$, where $a, b \in \mathbb{Z}$
+- Subtraction: $a - b \in \mathbb{Z}$, where $a, b \in \mathbb{Z}$
+- Multiplication: $a \times b \in \mathbb{Z}$, where $a, b \in \mathbb{Z}$
+</Callout>
+
+## Rational Numbers (ℚ)
+
+Rational numbers, denoted by ℚ, are numbers that can be expressed as the ratio of two integers (i.e., fractions). They include all integers and fractions. Rational numbers are closed under addition, subtraction, multiplication, and division (except division by zero).
+
+<Callout emoji="✅">
+Rational numbers are closed under:
+- Addition: $\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd} \in \mathbb{Q}$, where $a, b, c, d \in \mathbb{Z}$ and $b, d \neq 0$
+- Subtraction: $\frac{a}{b} - \frac{c}{d} = \frac{ad - bc}{bd} \in \mathbb{Q}$, where $a, b, c, d \in \mathbb{Z}$ and $b, d \neq 0$
+- Multiplication: $\frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd} \in \mathbb{Q}$, where $a, b, c, d \in \mathbb{Z}$ and $b, d \neq 0$
+- Division: $\frac{a}{b} \div \frac{c}{d} = \frac{ad}{bc} \in \mathbb{Q}$, where $a, b, c, d \in \mathbb{Z}$ and $b, c, d \neq 0$
+</Callout>
+
+## Real Numbers (ℝ)
+
+Real numbers, denoted by ℝ, include all rational numbers and irrational numbers (numbers that cannot be expressed as the ratio of two integers, such as $\sqrt{2}$ and $\pi$). Real numbers are closed under addition, subtraction, multiplication, and division (except division by zero).
+
+<Callout emoji="✅">
+Real numbers are closed under:
+- Addition: $a + b \in \mathbb{R}$, where $a, b \in \mathbb{R}$
+- Subtraction: $a - b \in \mathbb{R}$, where $a, b \in \mathbb{R}$
+- Multiplication: $a \times b \in \mathbb{R}$, where $a, b \in \mathbb{R}$
+- Division: $a \div b \in \mathbb{R}$, where $a, b \in \mathbb{R}$ and $b \neq 0$
+</Callout>
+
+## Complex Numbers (ℂ)
+
+Complex numbers, denoted by ℂ, are an extension of real numbers that include the imaginary unit $i$, where $i^2 = -1$. A complex number is written as $a + bi$, where $a$ and $b$ are real numbers. Complex numbers are closed under addition, subtraction, multiplication, and division (except division by zero).
+
+<Callout emoji="✅">
+Complex numbers are closed under:
+- Addition: $(a + bi) + (c + di) = (a + c) + (b + d)i \in \mathbb{C}$, where $a, b, c, d \in \mathbb{R}$
+- Subtraction: $(a + bi) - (c + di) = (a - c) + (b - d)i \in \mathbb{C}$, where $a, b, c, d \in \mathbb{R}$
+- Multiplication: $(a + bi)(c + di) = (ac - bd) + (ad + bc)i \in \mathbb{C}$, where $a, b, c, d \in \mathbb{R}$
+- Division: $\frac{a + bi}{c + di} = \frac{(a + bi)(c - di)}{(c + di)(c - di)} = \frac{(ac + bd) + (bc - ad)i}{c^2 + d^2} \in \mathbb{C}$, where $a, b, c, d \in \mathbb{R}$ and $c + di \neq 0$
+</Callout>
+
+Understanding the properties and closure of these number systems lays the foundation for exploring [Complex Numbers as 2D Vectors](/vector-basics-and-products/complex-numbers-as-2d-vectors) and ultimately diving into the world of [Vector Multiplication and Geometric Algebra](/multiplying-vectors-the-journey-begins).

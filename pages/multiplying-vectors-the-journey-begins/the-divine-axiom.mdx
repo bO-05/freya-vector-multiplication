@@ -1,0 +1,60 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# The Divine Axiom
+
+In our quest to unravel the enigma of vector multiplication, we find ourselves at a crossroads. Our attempts to multiply vectors directly have led us to an unfamiliar algebraic structure. It is time to seek guidance from a higher power, an oracle of incomprehensible wisdom. Enter the divine being, Salad.
+
+## Salad's Wisdom
+
+Salad, in all their infinite wisdom, bestows upon us a key to understanding:
+
+<Callout type="info">
+If you square a vector, you get the length squared. In other words: $\vec{v}^2 = |\vec{v}|^2$
+</Callout>
+
+This axiom, seemingly simple, holds the power to unlock the secrets of vector multiplication. It is an axiomatic truth, a fundamental assumption that will serve as our guiding light in the realm of geometric algebra.
+
+## Exploring the Axiom
+
+Let's put Salad's wisdom to the test. Consider a vector $\vec{v} = (1, 2, 3)$. According to the divine axiom:
+
+$$\vec{v}^2 = |\vec{v}|^2$$
+
+We can calculate the length of $\vec{v}$ using the Pythagorean theorem:
+
+$$|\vec{v}| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}$$
+
+Squaring both sides, we get:
+
+$$|\vec{v}|^2 = 14$$
+
+Now, let's square $\vec{v}$ directly:
+
+$$\vec{v}^2 = (1, 2, 3)^2 = 1^2 + 2^2 + 3^2 = 14$$
+
+The divine axiom holds true! Salad's wisdom has proven to be a solid foundation for our exploration.
+
+## The Basis Vectors
+
+Armed with this newfound knowledge, let's consider the basis vectors of our coordinate system: $\hat{x}$, $\hat{y}$, and $\hat{z}$. These vectors have a length of 1 and are mutually orthogonal. What happens when we multiply them by themselves?
+
+<Steps>
+### Step 1
+
+According to the divine axiom, squaring a basis vector should equal its length squared:
+
+$$\hat{x}^2 = |\hat{x}|^2 = 1^2 = 1$$
+
+### Step 2
+
+The same holds true for $\hat{y}$ and $\hat{z}$:
+
+$$\hat{y}^2 = |\hat{y}|^2 = 1^2 = 1$$
+$$\hat{z}^2 = |\hat{z}|^2 = 1^2 = 1$$
+</Steps>
+
+This revelation provides us with a crucial piece of the puzzle. We now know that multiplying a basis vector by itself yields a scalar value of 1.
+
+## The Journey Continues
+
+With Salad's divine axiom as our guide, we are ready to delve deeper into the mysteries of vector multiplication. In the next section, we will explore how this axiom leads to the emergence of familiar products, such as the [dot product](/multiplying-vectors-the-journey-begins/emergence-of-dot-product-and-cross-product) and the [cross product](/multiplying-vectors-the-journey-begins/emergence-of-dot-product-and-cross-product), and uncover the true nature of [quaternions](/multiplying-vectors-the-journey-begins/quaternions-the-byproduct-of-vector-multiplication) as the byproduct of vector multiplication in 3D space.

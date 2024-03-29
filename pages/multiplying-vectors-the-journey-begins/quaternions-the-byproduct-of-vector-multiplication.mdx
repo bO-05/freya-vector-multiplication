@@ -1,0 +1,65 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Quaternions: The Byproduct of Vector Multiplication
+
+In our journey to unravel the enigma of vector multiplication, we stumbled upon a fascinating byproduct: quaternions. These four-dimensional mathematical objects emerged as a result of multiplying 3D vectors, and they hold the key to understanding rotations in three-dimensional space.
+
+## The Emergence of Quaternions
+
+Recall that when we multiplied two 3D vectors, we obtained an expression with familiar components: the dot product and the cross product. However, we also encountered three mysterious terms: $yz$, $zx$, and $xy$. These terms, known as bivectors, form the basis of quaternions.
+
+<Steps>
+### Step 1
+
+Recognize the pattern in the mysterious terms:
+
+- $yz$ represents the plane formed by the $y$ and $z$ axes
+- $zx$ represents the plane formed by the $z$ and $x$ axes
+- $xy$ represents the plane formed by the $x$ and $y$ axes
+
+### Step 2
+
+Understand the algebraic behavior of these terms:
+
+- Squaring any of these terms yields -1: $yz^2 = zx^2 = xy^2 = -1$
+- Multiplying these terms in a cyclic manner yields the same result: $yz \cdot zx \cdot xy = -1$
+
+</Steps>
+
+This behavior is precisely the definition of quaternions, often written as:
+
+$$i^2 = j^2 = k^2 = ijk = -1$$
+
+where $i$, $j$, and $k$ represent the bivectors $yz$, $zx$, and $xy$, respectively.
+
+## The Structure of Quaternions
+
+A quaternion $q$ can be expressed as a linear combination of a scalar (real) part and three bivector (imaginary) parts:
+
+$$q = w + xi + yj + zk$$
+
+where $w$, $x$, $y$, and $z$ are real numbers.
+
+<Callout type="info">
+Quaternions are an extension of complex numbers, with three imaginary components instead of one. They form a four-dimensional algebra that is closed under multiplication, just like complex numbers.
+</Callout>
+
+## Quaternions and Rotations
+
+The most significant application of quaternions in game development and computer graphics is their ability to represent rotations in 3D space. When we multiply two unit vectors (vectors with a length of 1) using the rules of quaternion multiplication, the resulting quaternion represents a rotation.
+
+```mermaid
+graph LR
+A[Vector 1] -- Quaternion Multiplication --> B[Vector 2]
+B -- Rotation --> C[Rotated Vector]
+```
+
+The angle of rotation is twice the angle between the two vectors, and the plane of rotation is the plane formed by the two vectors.
+
+<Callout type="warning">
+It's important to note that quaternions are not commutative under multiplication, meaning that the order of multiplication matters. This property is essential when working with rotations in 3D space.
+</Callout>
+
+By understanding quaternions as the byproduct of vector multiplication, we gain a deeper insight into their structure and behavior. This knowledge empowers us to harness the power of quaternions in various applications, such as [representing orientations](/bivectors-and-geometric-algebra/multivectors-in-2d-and-3d), [interpolating rotations](/conclusion), and more.
+
+As we continue our exploration of geometric algebra, we'll uncover even more profound connections between vectors, bivectors, and the elegant mathematical framework that underlies them.

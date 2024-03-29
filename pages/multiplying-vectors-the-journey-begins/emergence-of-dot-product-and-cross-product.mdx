@@ -1,0 +1,67 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Emergence of Dot Product and Cross Product
+
+In our quest to unravel the enigma of multiplying vectors, we stumbled upon a divine axiom bestowed upon us by the oracle Salad: the square of a vector equals its squared length $(v^2 = |v|^2)$. This seemingly innocent rule holds the key to unlocking the secrets of vector multiplication and the emergence of familiar products.
+
+## Squaring Basis Vectors
+
+Let's begin by applying this axiom to our basis vectors $(x, y, z)$, which represent the orthonormal coordinate system. Since each basis vector has a length of 1, squaring them yields:
+
+$x^2 = y^2 = z^2 = 1$
+
+This simple result will prove crucial in simplifying our vector multiplication equation.
+
+## The Diagonal of Bases
+
+Next, we consider the diagonal between two basis vectors, such as $x + y$. Using the divine axiom, we can express the square of this vector as:
+
+$(x + y)^2 = \sqrt{2}^2 = 2$
+
+Expanding the left-hand side and applying the basis vector squaring rule, we arrive at:
+
+$xx + xy + yx + yy = 2$
+
+$1 + xy + yx + 1 = 2$
+
+Subtracting 2 from both sides and rearranging, we discover a fascinating property:
+
+$xy = -yx$
+
+This commutative rule for orthonormal basis vectors will be instrumental in simplifying our vector multiplication equation.
+
+## Unraveling Vector Multiplication
+
+Armed with these insights, let's revisit our vector multiplication equation:
+
+$\vec{a} \vec{b} = (a_x x + a_y y + a_z z)(b_x x + b_y y + b_z z)$
+
+Expanding the right-hand side and applying the basis vector squaring and commutative rules, we can simplify the equation to:
+
+$\vec{a} \vec{b} = (a_x b_x + a_y b_y + a_z b_z) + (a_y b_z - a_z b_y)yz + (a_z b_x - a_x b_z)zx + (a_x b_y - a_y b_x)xy$
+
+<Callout type="info">
+The terms in parentheses might look familiar to you. They are the components of the dot product and cross product!
+</Callout>
+
+## Dot Product and Cross Product Byproducts
+
+The first term in our simplified vector multiplication equation is none other than the dot product:
+
+$\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z$
+
+The remaining terms form the components of the cross product:
+
+$\vec{a} \times \vec{b} = (a_y b_z - a_z b_y)\hat{i} + (a_z b_x - a_x b_z)\hat{j} + (a_x b_y - a_y b_x)\hat{k}$
+
+<Steps>
+### Reflection
+
+Take a moment to appreciate the beauty of this discovery. By simply assuming the divine axiom and applying it to our basis vectors, we have derived the dot product and cross product as natural byproducts of vector multiplication.
+
+### Implications
+
+This revelation suggests that the dot product and cross product are not standalone operations but rather integral components of the broader concept of vector multiplication. It also hints at the existence of a more unified framework for understanding vector algebra, which we will explore further in the [Bivectors and Geometric Algebra](/bivectors-and-geometric-algebra) section.
+</Steps>
+
+As we continue our journey, keep in mind that the divine axiom has led us to uncover the hidden connections between seemingly disparate vector operations. In the next section, we will delve into the mysterious world of [Quaternions: The Byproduct of Vector Multiplication](/multiplying-vectors-the-journey-begins/quaternions-the-byproduct-of-vector-multiplication) and discover even more surprises awaiting us in the realm of geometric algebra.

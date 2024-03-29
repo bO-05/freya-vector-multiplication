@@ -1,0 +1,60 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Multivectors in 2D and 3D
+
+In geometric algebra, we combine scalars, vectors, and bivectors into a single structure called a **multivector**. This unified framework allows us to perform algebraic operations on these different geometric objects seamlessly.
+
+## 2D Multivectors
+
+In 2D, a multivector consists of:
+- A scalar (real number)
+- A vector (with 2 components)
+- A bivector (with 1 component)
+
+We can represent a 2D multivector as follows:
+
+$\text{Multivector}_{2D} = s + \mathbf{v} + \mathbf{B}$
+
+where:
+- $s$ is the scalar part
+- $\mathbf{v} = v_x\mathbf{e}_x + v_y\mathbf{e}_y$ is the vector part
+- $\mathbf{B} = b_{xy}\mathbf{e}_{xy}$ is the bivector part
+
+<Callout type="info">
+The basis elements for a 2D multivector are:
+- Scalar: 1
+- Vector: $\mathbf{e}_x$, $\mathbf{e}_y$
+- Bivector: $\mathbf{e}_{xy}$
+</Callout>
+
+## 3D Multivectors
+
+In 3D, a multivector consists of:
+- A scalar (real number)
+- A vector (with 3 components)
+- A bivector (with 3 components)
+- A trivector (with 1 component, representing the unit volume)
+
+We can represent a 3D multivector as follows:
+
+$\text{Multivector}_{3D} = s + \mathbf{v} + \mathbf{B} + \mathbf{T}$
+
+where:
+- $s$ is the scalar part
+- $\mathbf{v} = v_x\mathbf{e}_x + v_y\mathbf{e}_y + v_z\mathbf{e}_z$ is the vector part
+- $\mathbf{B} = b_{yz}\mathbf{e}_{yz} + b_{zx}\mathbf{e}_{zx} + b_{xy}\mathbf{e}_{xy}$ is the bivector part
+- $\mathbf{T} = t_{xyz}\mathbf{e}_{xyz}$ is the trivector part
+
+<Callout type="info">
+The basis elements for a 3D multivector are:
+- Scalar: 1
+- Vector: $\mathbf{e}_x$, $\mathbf{e}_y$, $\mathbf{e}_z$
+- Bivector: $\mathbf{e}_{yz}$, $\mathbf{e}_{zx}$, $\mathbf{e}_{xy}$
+- Trivector: $\mathbf{e}_{xyz}$
+</Callout>
+
+By using multivectors, we can unify various geometric concepts and operations within a single algebraic framework. This allows us to simplify and generalize many mathematical concepts, such as [rotations](/bivectors-and-geometric-algebra/the-wedge-product), [curvature](/bivectors-and-geometric-algebra/curvature-bivector), and more.
+
+<Callout type="success">
+Multivectors provide a powerful and elegant way to represent and manipulate geometric objects in any dimension, making geometric algebra a valuable tool for game development, physics simulations, and computer graphics.
+</Callout>

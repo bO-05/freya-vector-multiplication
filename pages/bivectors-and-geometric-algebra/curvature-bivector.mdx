@@ -1,0 +1,55 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Curvature Bivector
+
+In this section, we'll explore how geometric algebra simplifies the concept of curvature in any dimension by using bivectors. Curvature is a crucial concept in mathematics and has applications in various fields, including game development, computer graphics, and physics.
+
+## What is Curvature?
+
+Curvature is a measure of how much a curve or surface deviates from being flat. In 2D, curvature is often represented by the radius of the osculating circle, which is the circle that best fits the curve at a given point. The curvature is the inverse of the radius of this circle.
+
+<Callout>
+The curvature of a straight line is zero, while a curvature of 1 indicates a turn in one direction, and a curvature of -1 indicates a turn in the opposite direction.
+</Callout>
+
+## Curvature in 2D and 3D
+
+Traditionally, the formulas for measuring curvature in 2D and 3D have been different:
+
+- In 2D, curvature is a scalar value and can be signed (positive or negative).
+- In 3D, curvature is often represented by the magnitude of the cross product between the velocity and acceleration vectors, divided by the speed cubed.
+
+These differences can lead to confusion and make it difficult to generalize curvature to higher dimensions.
+
+## Introducing the Curvature Bivector
+
+By applying geometric algebra, we can simplify the concept of curvature and make it consistent across dimensions. Instead of using the cross product, we can use the [wedge product](/bivectors-and-geometric-algebra/the-wedge-product) to calculate curvature:
+
+$\kappa = \frac{\mathbf{v} \wedge \mathbf{a}}{|\mathbf{v}|^3}$
+
+Where:
+- $\kappa$ is the curvature bivector
+- $\mathbf{v}$ is the velocity vector
+- $\mathbf{a}$ is the acceleration vector
+- $\wedge$ is the wedge product
+
+<Callout>
+The curvature bivector is a bivector that represents the oriented plane in which the curvature occurs, along with its magnitude.
+</Callout>
+
+By using the wedge product, we obtain a bivector instead of a scalar or a vector. This generalized curvature formula works in any dimension and provides a more intuitive and consistent representation of curvature.
+
+## Benefits of the Curvature Bivector
+
+Using the curvature bivector has several advantages:
+
+- It generalizes curvature to any dimension seamlessly.
+- It provides a consistent representation of curvature across dimensions.
+- It encodes both the magnitude and the orientation of the curvature in a single bivector.
+- It simplifies the mathematical formulation of curvature.
+
+## Conclusion
+
+By leveraging geometric algebra and the wedge product, we can define curvature using bivectors, which provides a more intuitive and consistent representation across dimensions. This generalized curvature formula can be applied in various fields, including game development, computer graphics, and physics, simplifying the understanding and implementation of curvature-related concepts.
+
+For more information on bivectors and geometric algebra, check out the [Bivectors and Geometric Algebra](/bivectors-and-geometric-algebra) section.

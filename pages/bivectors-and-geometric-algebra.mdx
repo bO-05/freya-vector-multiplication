@@ -1,0 +1,43 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Bivectors and Geometric Algebra
+
+In the realm of geometric algebra, we encounter a fascinating entity known as a **bivector**. Bivectors are the byproduct of multiplying two vectors together, and they represent oriented planes with an associated area. They are a crucial component in the larger framework of geometric algebra, which unifies and generalizes various mathematical concepts.
+
+## Understanding Bivectors
+
+To grasp the concept of bivectors, let's consider our familiar 3D coordinate system with the basis vectors $\mathbf{x}$, $\mathbf{y}$, and $\mathbf{z}$. When we multiply two of these basis vectors together, such as $\mathbf{xy}$, $\mathbf{yz}$, or $\mathbf{zx}$, we obtain a bivector. These bivectors represent the oriented plane formed by the two basis vectors, with an area of 1.
+
+<Callout type="info">
+Bivectors are to planes what vectors are to directions. They encode both the orientation and the magnitude (area) of a plane.
+</Callout>
+
+Just like vectors can be thought of as casting shadows onto each of the coordinate axes, bivectors can be visualized as casting shadows onto the three basis planes ($\mathbf{xy}$, $\mathbf{yz}$, and $\mathbf{zx}$). The components of a bivector represent the signed area projections onto these basis planes.
+
+## The Power of Geometric Algebra
+
+Geometric algebra provides a unified language to express and manipulate various geometric objects, including vectors, bivectors, and higher-dimensional entities called multivectors. It extends the concept of multiplication to these objects, allowing us to perform powerful computations and transformations.
+
+One of the key insights of geometric algebra is that the product of two vectors yields a multivector, which consists of both a scalar part (the dot product) and a bivector part (the [wedge product](/bivectors-and-geometric-algebra/the-wedge-product)). This unification of dot product and wedge product into a single operation is a hallmark of geometric algebra.
+
+## Applications and Benefits
+
+Geometric algebra finds applications in various fields, including physics, computer graphics, and robotics. It provides a concise and expressive way to represent and manipulate geometric objects, simplifying many mathematical expressions and revealing deep connections between seemingly disparate concepts.
+
+Some of the benefits of using geometric algebra include:
+
+- Intuitive geometric interpretation of algebraic operations
+- Unified treatment of dot product, cross product, and wedge product
+- Generalization to higher dimensions without losing geometric meaning
+- Simplified expressions for rotations, reflections, and other transformations
+- Elegant formulation of [curvature](/bivectors-and-geometric-algebra/curvature-bivector) and other geometric properties
+
+## Diving Deeper
+
+To fully harness the power of geometric algebra, it's essential to understand its building blocks and how they interact. In the following sections, we'll explore:
+
+- [The Wedge Product](/bivectors-and-geometric-algebra/the-wedge-product): The exterior product that generates bivectors
+- [Curvature Bivector](/bivectors-and-geometric-algebra/curvature-bivector): Simplifying the concept of curvature using geometric algebra
+- [Multivectors in 2D and 3D](/bivectors-and-geometric-algebra/multivectors-in-2d-and-3d): Combining scalars, vectors, and bivectors into a single structure
+
+By mastering these concepts, you'll be well-equipped to leverage geometric algebra in your own projects and explore its vast potential in solving complex geometric problems elegantly and efficiently.

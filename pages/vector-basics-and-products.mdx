@@ -1,0 +1,65 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Vector Basics and Products
+
+Before diving into the mysterious realm of vector multiplication, let's take a step back and review the fundamentals of vectors and their common products. This section will lay the groundwork for our exploration of geometric algebra and help us understand the limitations of traditional vector operations.
+
+## Anatomy of a Vector
+
+A vector is a mathematical object that represents both magnitude and direction. In a 3D space, a vector $\vec{v}$ is typically represented using boldface notation and can be written as:
+
+$\vec{v} = (v_x, v_y, v_z)$
+
+where $v_x$, $v_y$, and $v_z$ are the x, y, and z components of the vector, respectively. These components are scalar values that indicate the vector's projection along each axis of the coordinate system.
+
+Vectors can also be represented as column matrices:
+
+$\vec{v} = \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix}$
+
+This representation is particularly useful when performing matrix operations on vectors.
+
+## Common Vector Products
+
+In traditional vector algebra, there are several common vector products that allow us to combine vectors and extract meaningful information from them. Let's explore a few of these products:
+
+### Dot Product
+
+The dot product, also known as the scalar product, is an operation that takes two vectors and returns a scalar value. Given two vectors $\vec{a}$ and $\vec{b}$, their dot product is defined as:
+
+$\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z$
+
+The dot product is commutative, meaning $\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$. It is often used to determine the angle between two vectors or to project one vector onto another.
+
+### Cross Product
+
+The cross product is an operation that takes two vectors and returns a new vector that is perpendicular to both input vectors. Given two vectors $\vec{a}$ and $\vec{b}$, their cross product is defined as:
+
+$\vec{a} \times \vec{b} = (a_y b_z - a_z b_y, a_z b_x - a_x b_z, a_x b_y - a_y b_x)$
+
+The resulting vector has a magnitude equal to the area of the parallelogram formed by the two input vectors and a direction determined by the right-hand rule. The cross product is not commutative, meaning $\vec{a} \times \vec{b} = -(\vec{b} \times \vec{a})$.
+
+<Callout type="warning">
+The cross product is only defined for 3D vectors. In 2D, a similar operation called the perp-dot product or 2D "cross product" is sometimes used, but it is not a true cross product and has different properties.
+</Callout>
+
+### Hadamard Product
+
+The Hadamard product, also known as the element-wise product or component-wise product, is an operation that multiplies corresponding components of two vectors. Given two vectors $\vec{a}$ and $\vec{b}$, their Hadamard product is defined as:
+
+$\vec{a} \odot \vec{b} = (a_x b_x, a_y b_y, a_z b_z)$
+
+The Hadamard product is commutative and is often used in computer graphics and shaders for component-wise operations on vectors.
+
+<Steps>
+
+### Exploring Number Systems
+
+In this subsection, we will examine the properties and closure of different number systems, such as natural numbers, integers, rational numbers, real numbers, and complex numbers. Understanding the behavior of these number systems will provide a foundation for our exploration of vector multiplication.
+
+### Complex Numbers as 2D Vectors
+
+Here, we will draw parallels between complex numbers and 2D vectors, exploring how complex number multiplication can inform our understanding of vector multiplication. By visualizing complex numbers in the complex plane, we will gain insights into the geometric nature of multiplication.
+
+</Steps>
+
+By mastering these vector basics and products, we will be well-equipped to tackle the enigma of vector multiplication and unravel the secrets of geometric algebra in the upcoming sections. [Let's continue our journey by attempting to multiply vectors directly](/multiplying-vectors-the-journey-begins) and see where it leads us!
